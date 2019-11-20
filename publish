@@ -1,0 +1,2 @@
+SITE=schemas.licensezero.com
+rsync -a --delete $(git ls-files | fgrep -v publish) $SITE:/var/www/$SITE/
