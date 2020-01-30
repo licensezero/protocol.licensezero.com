@@ -20,6 +20,11 @@ tape.test('1.0.0-pre', function (suite) {
       schemas[basename] = schema
       test.assert(ajv.validateSchema(schema), 'valid JSON schema')
       test.deepEqual(ajv.errors, null, 'no validation errors')
+      test.equal(
+        file,
+        schema.$id.replace('https://schemas.licensezero.com/', ''),
+        '$id'
+      )
       test.end()
     })
   })
