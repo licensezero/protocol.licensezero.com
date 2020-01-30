@@ -8,12 +8,12 @@ tape.test('1.0.0-pre', function (suite) {
   var schemas = {}
   var ajv = new AJV()
 
-  glob.sync('1.0.0-pre/schemas/*.json').forEach(function (file) {
+  glob.sync('1.0.0-pre/*.json').forEach(function (file) {
     var schema = JSON.parse(fs.readFileSync(file))
     ajv.addSchema(schema, schema.$id)
   })
 
-  glob.sync('1.0.0-pre/schemas/*.json').forEach(function (file) {
+  glob.sync('1.0.0-pre/*.json').forEach(function (file) {
     suite.test(file, function (test) {
       var basename = path.basename(file, '.json')
       var schema = JSON.parse(fs.readFileSync(file))
