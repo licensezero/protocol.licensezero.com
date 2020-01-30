@@ -4,9 +4,9 @@
   "signature": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
   "license": {
     "values": {
-      "offer": "9aab7058-599a-43db-9449-5fc0971ecbfa",
+      "offerID": "9aab7058-599a-43db-9449-5fc0971ecbfa",
       "effective": "2018-11-13T20:20:39Z",
-      "order": "2c743a84-09ce-4549-9f0d-19d8f53462bb",
+      "orderID": "2c743a84-09ce-4549-9f0d-19d8f53462bb",
       "licensee": {
         "email": "licensee@example.com",
         "jurisdiction": "US-TX",
@@ -16,7 +16,7 @@
         "email": "licensor@example.com",
         "jurisdiction": "US-CA",
         "name": "Jane Licensor",
-        "id": "59e70a4d-ffee-4e9d-a526-7a9ff9161664"
+        "licensorID": "59e70a4d-ffee-4e9d-a526-7a9ff9161664"
       },
       "price": {
         "amount": 1000,

@@ -14,11 +14,11 @@ paths:
               schema:
                 $ref: https://schemas.licensezero.com/1.0.0/key.json
 
-  /offers/{uuid}:
+  /offers/{offerID}:
     get:
       summary: Returns information about a license offer.
       parameters:
-        - name: uuid
+        - name: offerID
           in: path
           required: true
           schema:
@@ -36,11 +36,11 @@ paths:
         default:
           description: Unexpected Error
 
-  /licensors/{uuid}:
+  /licensors/{licensorID}:
     get:
       summary: Returns information about a licensor.
       parameters:
-        - name: uuid
+        - name: licensorID
           in: path
           required: true
           schema:
@@ -80,11 +80,11 @@ paths:
       5XX:
         description: Unexpected Error
 
-  receipts/{uuid}:
+  receipts/{receiptID}:
     get:
       summary: Returns a receipt.
       parameters:
-        - name: uuid
+        - name: receiptID
           in: path
           required: true
           schema:
@@ -103,11 +103,11 @@ paths:
         default:
           description: Unexpected Error
 
-  bundles/{uuid}:
+  bundles/{bundleID}:
     get:
       summary: Returns a bundle of receipts.
       parameters:
-        - name: uuid
+        - name: bundleID
           in: path
           required: true
           schema:
@@ -126,11 +126,11 @@ paths:
         default:
           description: Unexpected Error
 
-  orders/{uuid}:
+  orders/{orderID}:
     get:
       summary: Returns the receipts for an order.
       parameters:
-        - name: uuid
+        - name: orderID
           in: path
           required: true
           schema:
@@ -147,11 +147,11 @@ paths:
         default:
           description: Unexpected Error
 
-  orders/{uuid}/latest:
+  orders/{orderID}/latest:
     get:
       summary: Returns the latest receipt for an order.
       parameters:
-        - name: uuid
+        - name: orderID
           in: path
           required: true
           schema:

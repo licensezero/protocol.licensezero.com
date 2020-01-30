@@ -2,11 +2,11 @@
   "$id": "https://schemas.licensezero.com/1.0.0-pre/order.json",
   "type": "object",
   "required": [
-    "offers",
+    "offerIDs",
     "licensee"
   ],
   "properties": {
-    "offers": {
+    "offerIDs": {
       "type": "array",
       "items": {
         "type": "string",

@@ -15,12 +15,12 @@
       "items": {
         "type": "object",
         "required": [
-          "id",
+          "offerID",
           "api"
         ],
         "additionalProperties": false,
         "properties": {
-          "id": {
+          "offerID": {
             "title": "UUIDv4 offer identifier",
             "type": "string",
             "format": "uuid"

@@ -33,8 +33,8 @@
         "values": {
           "type": "object",
           "required": [
-            "offer",
-            "order",
+            "offerID",
+            "orderID",
             "effective",
             "licensor",
             "licensee",
@@ -42,12 +42,12 @@
           ],
           "additionalProperties": false,
           "properties": {
-            "offer": {
+            "offerID": {
               "title": "offer identifier",
               "type": "string",
               "format": "uuid"
             },
-            "order": {
+            "orderID": {
               "title": "order identifier",
               "type": "string",
               "format": "uuid"
@@ -97,7 +97,7 @@
                 "email",
                 "jurisdiction",
                 "name",
-                "id"
+                "licensorID"
               ],
               "properties": {
                 "email": {
@@ -113,7 +113,7 @@
                     "Joe Licensor"
                   ]
                 },
-                "id": {
+                "licensorID": {
                   "title": "licensor identifier",
                   "type": "string",
                   "format": "uuid"
