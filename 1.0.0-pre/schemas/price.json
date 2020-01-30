@@ -1,5 +1,5 @@
 {
-  "$id": "https://licensevendor.com/1.0.0-pre/schemas/price.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/price.json",
   "title": "price",
   "type": "object",
   "required": [
@@ -19,7 +19,7 @@
     },
     "currency": {
       "title": "purchase price currency code",
-      "$ref": "https://licensevendor.com/1.0.0-pre/schemas/currency.json",
+      "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/currency.json",
       "examples": [
         "USD"
       ]

@@ -1,5 +1,5 @@
 {
-  "$id": "https://licensevendor.com/1.0.0-pre/schemas/artifact.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/artifact.json",
   "type": "object",
   "required": [
     "schema",
@@ -8,7 +8,7 @@
   "additionalProperties": false,
   "properties": {
     "schema": {
-      "const": "https://licensevendor.com/1.0.0-pre/schemas/artifact.json"
+      "const": "https://schemas.licensezero.com/1.0.0-pre/schemas/artifact.json"
     },
     "offers": {
       "type": "array",
