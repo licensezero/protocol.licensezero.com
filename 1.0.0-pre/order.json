@@ -1,5 +1,5 @@
 {
-  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/order.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/order.json",
   "type": "object",
   "required": [
     "offers",
@@ -27,7 +27,7 @@
           "format": "email"
         },
         "jurisdiction": {
-          "$ref": "https://example.com/1.0.0-pre/schemas/iso31662.json"
+          "$ref": "https://example.com/1.0.0-pre/iso31662.json"
         },
         "name": {
           "type": "string",

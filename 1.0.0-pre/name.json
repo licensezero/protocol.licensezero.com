@@ -1,5 +1,5 @@
 {
-  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/name.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/name.json",
   "title": "personal or organization name",
   "type": "string",
   "minLength": 3,

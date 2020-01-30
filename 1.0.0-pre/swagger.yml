@@ -12,7 +12,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/1.0.0/schemas/key.json
+                $ref: https://schemas.licensezero.com/1.0.0/key.json
 
   /offers/{uuid}:
     get:
@@ -95,7 +95,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/schemas/receipt.json
+                $ref: https://schemas.licensezero.com/receipt.json
         400:
           description: The specified id is not a valid UUID.
         404:
@@ -118,7 +118,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/schemas/bundle.json
+                $ref: https://schemas.licensezero.com/bundle.json
         400:
           description: The specified id is not a valid UUID.
         404:
@@ -143,7 +143,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: https://schemas.licensezero.com/schemas/receipt.json
+                  $ref: https://schemas.licensezero.com/receipt.json
         default:
           description: Unexpected Error
 

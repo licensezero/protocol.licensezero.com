@@ -1,7 +1,7 @@
 {
-  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/bundle.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/bundle.json",
   "type": "array",
   "items": {
-    "$ref": "https://example.com/1.0.0-pre/schemas/receipt.json"
+    "$ref": "https://example.com/1.0.0-pre/receipt.json"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/receipt.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/receipt.json",
   "title": "license receipt",
   "comment": "A receipt represents confirmation of the sale of a software license.",
   "type": "object",
@@ -12,15 +12,15 @@
   "additionalProperties": false,
   "properties": {
     "schema": {
-      "const": "https://schemas.licensezero.com/1.0.0-pre/schemas/receipt.json"
+      "const": "https://schemas.licensezero.com/1.0.0-pre/receipt.json"
     },
     "key": {
       "title": "public signing key of the license vendor",
-      "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/key.json"
+      "$ref": "https://schemas.licensezero.com/1.0.0-pre/key.json"
     },
     "signature": {
       "title": "signature of the license vendor",
-      "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/signature.json"
+      "$ref": "https://schemas.licensezero.com/1.0.0-pre/signature.json"
     },
     "license": {
       "title": "license manifest",
@@ -54,15 +54,15 @@
             },
             "effective": {
               "title": "effective date",
-              "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/time.json"
+              "$ref": "https://schemas.licensezero.com/1.0.0-pre/time.json"
             },
             "price": {
               "title": "purchase price",
-              "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/price.json"
+              "$ref": "https://schemas.licensezero.com/1.0.0-pre/price.json"
             },
             "expires": {
               "title": "expiration date of the license",
-              "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/time.json"
+              "$ref": "https://schemas.licensezero.com/1.0.0-pre/time.json"
             },
             "licensee": {
               "title": "licensee",
@@ -79,10 +79,10 @@
                   "format": "email"
                 },
                 "jurisdiction": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/jurisdiction.json"
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/jurisdiction.json"
                 },
                 "name": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/name.json",
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/name.json",
                   "examples": [
                     "Joe Licensee"
                   ]
@@ -105,10 +105,10 @@
                   "format": "email"
                 },
                 "jurisdiction": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/jurisdiction.json"
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/jurisdiction.json"
                 },
                 "name": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/name.json",
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/name.json",
                   "examples": [
                     "Joe Licensor"
                   ]
@@ -135,23 +135,23 @@
               "properties": {
                 "api": {
                   "title": "license API",
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/url.json"
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/url.json"
                 },
                 "email": {
                   "type": "string",
                   "format": "email"
                 },
                 "name": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/name.json",
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/name.json",
                   "example": [
                     "Artless Devices LLC"
                   ]
                 },
                 "jurisdiction": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/jurisdiction.json"
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/jurisdiction.json"
                 },
                 "website": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/schemas/url.json"
+                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/url.json"
                 }
               }
             }

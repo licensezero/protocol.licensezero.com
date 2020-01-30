@@ -1,5 +1,5 @@
 {
-  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/offer.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/offer.json",
   "type": "object",
   "required": [
     "url",
@@ -28,7 +28,7 @@
       },
       "patternProperties": {
         "^d+$": {
-          "$ref": "https://example.com/1.0.0-pre/schemas/price.json"
+          "$ref": "https://example.com/1.0.0-pre/price.json"
         }
       }
     }

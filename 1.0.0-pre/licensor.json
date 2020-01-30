@@ -1,5 +1,5 @@
 {
-  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/licensor.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/licensor.json",
   "type": "object",
   "required": [
     "name",
@@ -11,7 +11,7 @@
       "minLength": 3
     },
     "jurisdiction": {
-      "$ref": "https://example.com/1.0.0-pre/schemas/iso31662.json"
+      "$ref": "https://example.com/1.0.0-pre/iso31662.json"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "https://schemas.licensezero.com/1.0.0-pre/schemas/url.json",
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/url.json",
   "title": "HTTPS URL",
   "type": "string",
   "format": "url",
