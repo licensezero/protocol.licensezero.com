@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "required": [
+    "offers",
+    "licensee"
+  ],
+  "properties": {
+    "offers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "licensee": {
+      "type": "object",
+      "required": [
+        "email",
+        "jurisdiction",
+        "name"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "jurisdiction": {
+          "$ref": "https://example.com/1.0.0-pre/schemas/iso31662.json"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    }
+  }
+}

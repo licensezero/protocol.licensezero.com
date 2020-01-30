@@ -28,29 +28,7 @@ paths:
         200:
           content:
             application/json:
-              schema:
-                type: object
-                required: [url, licensor, pricing]
-                additionalProperties: true
-                properties:
-                  url:
-                    type: string
-                    format: uri
-                  licensor:
-                    type: string
-                    format: uuid
-                  pricing:
-                    type: object
-                    properties:
-                      single:
-                        $ref: https://example.com/schemas/price.json
-                      site:
-                        $ref: https://example.com/schemas/price.json
-                      relicense:
-                        $ref: https://example.com/schemas/price.json
-                    patternProperties:
-                      ^\d+$:
-                        $ref: https://example.com/schemas/price.json
+              $ref: https://licensevendor.com/1.0.0/offer.json
         400:
           description: The specified UUID is not a valid UUID.
         404:
@@ -73,14 +51,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                required: [name, jurisdiction]
-                properties:
-                  name:
-                    type: string
-                    minLenght: 3
-                  jurisdiction:
-                    $ref: https://example.com/schemas/iso31662.json
+                $ref: https://licensevendor.com/1.0.0/licensor.json
         400:
           description: The specified UUID is not a valid UUID.
         404:
@@ -96,27 +67,7 @@ paths:
         content:
           application/x-www-form-urlencoded:
             schema:
-              type: object
-              required: [offers, licensee]
-              properties:
-                offers:
-                  type: array
-                  items:
-                    type: string
-                    format: uuid
-                licensee:
-                  type: object
-                  required: [email, jurisdiction, name]
-                  additionalProperties: true
-                  properties:
-                    email:
-                      type: string
-                      format: email
-                    jurisdiction:
-                      $ref: https://example.com/schemas/iso31662.json
-                    name:
-                      type: string
-                      minLength: 3
+              $ref: https://licensevendor.com/1.0.0/order.json
     responses:
       303:
         description: The order is ready to complete.
@@ -144,7 +95,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://example.com/schemas/receipt.json
+                $ref: https://licensevendor.com/schemas/receipt.json
         400:
           description: The specified id is not a valid UUID.
         404:
@@ -167,9 +118,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: https://example.com/schemas/receipt.json
+                $ref: https://licensevendor.com/schemas/bundle.json
         400:
           description: The specified id is not a valid UUID.
         404:
@@ -194,7 +143,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: https://example.com/schemas/receipt.json
+                  $ref: https://licensevendor.com/schemas/receipt.json
         default:
           description: Unexpected Error
 

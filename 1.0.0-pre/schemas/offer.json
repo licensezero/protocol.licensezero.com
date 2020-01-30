@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "required": [
+    "url",
+    "licensor",
+    "pricing"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "licensor": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "single": {
+          "$ref": "https://example.com/1.0.0-pre/offer.json"
+        },
+        "site": {
+          "$ref": "https://example.com/1.0.0-pre/offer.json"
+        }
+      },
+      "patternProperties": {
+        "^d+$": {
+          "$ref": "https://example.com/1.0.0-pre/schemas/price.json"
+        }
+      }
+    }
+  }
+}
