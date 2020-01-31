@@ -30,15 +30,19 @@
         "values": {
           "type": "object",
           "required": [
+            "api",
             "offerID",
             "orderID",
             "effective",
             "licensor",
-            "licensee",
-            "vendor"
+            "licensee"
           ],
           "additionalProperties": false,
           "properties": {
+            "api": {
+              "title": "license API",
+              "$ref": "url.json"
+            },
             "offerID": {
               "title": "offer identifier",
               "type": "string",
@@ -122,7 +126,6 @@
               "comment": "information on the party that sold the license, such as an agent or reseller, if the licensor did not sell the license themself",
               "type": "object",
               "required": [
-                "api",
                 "email",
                 "name",
                 "jurisdiction",
@@ -130,10 +133,6 @@
               ],
               "additionalProperties": false,
               "properties": {
-                "api": {
-                  "title": "license API",
-                  "$ref": "url.json"
-                },
                 "email": {
                   "type": "string",
                   "format": "email"
