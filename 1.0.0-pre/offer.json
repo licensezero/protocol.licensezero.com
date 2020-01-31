@@ -21,15 +21,15 @@
       "type": "object",
       "properties": {
         "single": {
-          "$ref": "https://example.com/1.0.0-pre/offer.json"
+          "$ref": "offer.json"
         },
         "site": {
-          "$ref": "https://example.com/1.0.0-pre/offer.json"
+          "$ref": "offer.json"
         }
       },
       "patternProperties": {
         "^d+$": {
-          "$ref": "https://example.com/1.0.0-pre/price.json"
+          "$ref": "price.json"
         }
       }
     }

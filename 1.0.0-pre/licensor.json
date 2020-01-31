@@ -12,7 +12,7 @@
       "minLength": 3
     },
     "jurisdiction": {
-      "$ref": "https://example.com/1.0.0-pre/iso31662.json"
+      "$ref": "iso31662.json"
     }
   }
 }

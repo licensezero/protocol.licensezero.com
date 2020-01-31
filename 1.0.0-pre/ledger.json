@@ -11,13 +11,13 @@
     ],
     "properties": {
       "digest": {
-        "$ref": "https://schemas.licensezero.com/1.0.0-pre/digest.json"
+        "$ref": "digest.json"
       },
       "signature": {
-        "$ref": "https://schemas.licensezero.com/1.0.0-pre/signature.json"
+        "$ref": "signature.json"
       },
       "time": {
-        "$ref": "https://schemas.licensezero.com/1.0.0-pre/time.json"
+        "$ref": "time.json"
       }
     }
   }

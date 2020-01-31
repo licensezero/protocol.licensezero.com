@@ -20,7 +20,7 @@
     },
     "currency": {
       "title": "purchase price currency code",
-      "$ref": "https://schemas.licensezero.com/1.0.0-pre/currency.json",
+      "$ref": "currency.json",
       "examples": [
         "USD"
       ]

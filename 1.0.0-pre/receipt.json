@@ -17,11 +17,11 @@
     },
     "key": {
       "title": "public signing key of the license vendor",
-      "$ref": "https://schemas.licensezero.com/1.0.0-pre/key.json"
+      "$ref": "key.json"
     },
     "signature": {
       "title": "signature of the license vendor",
-      "$ref": "https://schemas.licensezero.com/1.0.0-pre/signature.json"
+      "$ref": "signature.json"
     },
     "license": {
       "title": "license manifest",
@@ -55,15 +55,15 @@
             },
             "effective": {
               "title": "effective date",
-              "$ref": "https://schemas.licensezero.com/1.0.0-pre/time.json"
+              "$ref": "time.json"
             },
             "price": {
               "title": "purchase price",
-              "$ref": "https://schemas.licensezero.com/1.0.0-pre/price.json"
+              "$ref": "price.json"
             },
             "expires": {
               "title": "expiration date of the license",
-              "$ref": "https://schemas.licensezero.com/1.0.0-pre/time.json"
+              "$ref": "time.json"
             },
             "licensee": {
               "title": "licensee",
@@ -80,10 +80,10 @@
                   "format": "email"
                 },
                 "jurisdiction": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/jurisdiction.json"
+                  "$ref": "jurisdiction.json"
                 },
                 "name": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/name.json",
+                  "$ref": "name.json",
                   "examples": [
                     "Joe Licensee"
                   ]
@@ -106,10 +106,10 @@
                   "format": "email"
                 },
                 "jurisdiction": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/jurisdiction.json"
+                  "$ref": "jurisdiction.json"
                 },
                 "name": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/name.json",
+                  "$ref": "name.json",
                   "examples": [
                     "Joe Licensor"
                   ]
@@ -136,23 +136,23 @@
               "properties": {
                 "api": {
                   "title": "license API",
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/url.json"
+                  "$ref": "url.json"
                 },
                 "email": {
                   "type": "string",
                   "format": "email"
                 },
                 "name": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/name.json",
+                  "$ref": "name.json",
                   "example": [
                     "Artless Devices LLC"
                   ]
                 },
                 "jurisdiction": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/jurisdiction.json"
+                  "$ref": "jurisdiction.json"
                 },
                 "website": {
-                  "$ref": "https://schemas.licensezero.com/1.0.0-pre/url.json"
+                  "$ref": "url.json"
                 }
               }
             }
