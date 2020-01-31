@@ -1,0 +1,23 @@
+{
+  "$id": "https://schemas.licensezero.com/1.0.0-pre/ledger.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "digest",
+      "signature",
+      "time"
+    ],
+    "properties": {
+      "digest": {
+        "$ref": "https://schemas.licensezero.com/1.0.0-pre/digest.json"
+      },
+      "signature": {
+        "$ref": "https://schemas.licensezero.com/1.0.0-pre/signature.json"
+      },
+      "time": {
+        "$ref": "https://schemas.licensezero.com/1.0.0-pre/time.json"
+      }
+    }
+  }
+}

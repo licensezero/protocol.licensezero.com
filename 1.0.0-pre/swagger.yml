@@ -14,6 +14,16 @@ paths:
               schema:
                 $ref: https://schemas.licensezero.com/1.0.0/key.json
 
+  /ledger:
+    get:
+      summary: Returns a list of receipts of hashes of receipts signed.
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: https://schemas.licensezero.com/1.0.0/ledger.json
+
   /offers/{offerID}:
     get:
       summary: Returns information about a license offer.
