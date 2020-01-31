@@ -3,14 +3,10 @@
   "$id": "https://schemas.licensezero.com/1.0.0-pre/artifact.json",
   "type": "object",
   "required": [
-    "schema",
     "offers"
   ],
   "additionalProperties": false,
   "properties": {
-    "schema": {
-      "const": "https://schemas.licensezero.com/1.0.0-pre/artifact.json"
-    },
     "offers": {
       "type": "array",
       "items": {

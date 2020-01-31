@@ -5,16 +5,12 @@
   "comment": "A receipt represents confirmation of the sale of a software license.",
   "type": "object",
   "required": [
-    "schema",
     "key",
     "signature",
     "license"
   ],
   "additionalProperties": false,
   "properties": {
-    "schema": {
-      "const": "https://schemas.licensezero.com/1.0.0-pre/receipt.json"
-    },
     "key": {
       "title": "public signing key of the license vendor",
       "$ref": "key.json"
