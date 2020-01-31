@@ -1,5 +1,0 @@
-cli quote [--noncommercial] [--open] [--parseable]
-cli identify --email=ADDRESS --jurisdiction=CODE --name=NAME [--silent]
-cli buy [--do-not-open] [--noncommercial] [--open] [--silent]
-cli import (--bundle=URL | --file=FILE) [--silent]
-cli backup
