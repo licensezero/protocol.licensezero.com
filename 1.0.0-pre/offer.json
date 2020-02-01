@@ -21,10 +21,10 @@
       "type": "object",
       "properties": {
         "single": {
-          "$ref": "offer.json"
+          "$ref": "price.json"
         },
         "site": {
-          "$ref": "offer.json"
+          "$ref": "price.json"
         }
       },
       "patternProperties": {
