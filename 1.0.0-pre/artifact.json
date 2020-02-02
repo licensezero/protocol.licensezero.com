@@ -12,16 +12,11 @@
       "items": {
         "type": "object",
         "required": [
-          "offerID",
-          "api"
+          "api",
+          "offerID"
         ],
         "additionalProperties": false,
         "properties": {
-          "offerID": {
-            "title": "UUIDv4 offer identifier",
-            "type": "string",
-            "format": "uuid"
-          },
           "api": {
             "title": "licensing API",
             "type": "string",
@@ -30,6 +25,11 @@
             "examples": [
               "https://api.licensezero.com"
             ]
+          },
+          "offerID": {
+            "title": "UUIDv4 offer identifier",
+            "type": "string",
+            "format": "uuid"
           },
           "public": {
             "title": "public license identifier",

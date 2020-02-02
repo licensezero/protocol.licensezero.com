@@ -3,17 +3,10 @@
   "$id": "https://schemas.licensezero.com/1.0.0-pre/order.json",
   "type": "object",
   "required": [
-    "offerIDs",
-    "licensee"
+    "licensee",
+    "offerIDs"
   ],
   "properties": {
-    "offerIDs": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      }
-    },
     "licensee": {
       "type": "object",
       "required": [
@@ -34,6 +27,13 @@
           "type": "string",
           "minLength": 3
         }
+      }
+    },
+    "offerIDs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
       }
     }
   }
