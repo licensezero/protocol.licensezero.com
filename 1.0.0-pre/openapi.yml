@@ -46,11 +46,11 @@ paths:
         default:
           description: Unexpected Error
 
-  /licensors/{licensorID}:
+  /sellers/{sellerID}:
     get:
-      summary: Returns information about a licensor.
+      summary: Returns information about a seller.
       parameters:
-        - name: licensorID
+        - name: sellerID
           in: path
           required: true
           schema:
@@ -61,7 +61,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/1.0.0/licensor.json
+                $ref: https://schemas.licensezero.com/1.0.0/seller.json
         400:
           description: The specified UUID is not a valid UUID.
         404:
