@@ -35,6 +35,7 @@
             "effective",
             "buyer",
             "seller",
+            "sellerID",
             "offerID",
             "orderID"
           ],
@@ -98,7 +99,6 @@
               "required": [
                 "email",
                 "jurisdiction",
-                "sellerID",
                 "name"
               ],
               "properties": {
@@ -109,11 +109,6 @@
                 "jurisdiction": {
                   "$ref": "jurisdiction.json"
                 },
-                "sellerID": {
-                  "title": "seller identifier",
-                  "type": "string",
-                  "format": "uuid"
-                },
                 "name": {
                   "$ref": "name.json",
                   "examples": [
@@ -121,6 +116,11 @@
                   ]
                 }
               }
+            },
+            "sellerID": {
+              "title": "seller identifier",
+              "type": "string",
+              "format": "uuid"
             },
             "broker": {
               "title": "license broker",
