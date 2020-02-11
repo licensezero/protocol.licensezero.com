@@ -31,7 +31,7 @@
         "values": {
           "type": "object",
           "required": [
-            "api",
+            "server",
             "effective",
             "buyer",
             "seller",
@@ -41,8 +41,8 @@
           ],
           "additionalProperties": false,
           "properties": {
-            "api": {
-              "title": "license API",
+            "server": {
+              "title": "license server",
               "$ref": "url.json"
             },
             "effective": {

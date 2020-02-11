@@ -2,7 +2,7 @@
   "offers": [
     {
       "offerID": "36fce1e2-5e96-41fc-8776-4e632b546d96",
-      "api": "https://broker.licensezero.com"
+      "server": "https://broker.licensezero.com"
     }
   ]
 }

@@ -6,7 +6,7 @@
       "signature": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "license": {
         "values": {
-          "api": "https://broker.licensezero.com",
+          "server": "https://broker.licensezero.com",
           "offerID": "9aab7058-599a-43db-9449-5fc0971ecbfa",
           "effective": "2018-11-13T20:20:39Z",
           "orderID": "2c743a84-09ce-4549-9f0d-19d8f53462bb",
