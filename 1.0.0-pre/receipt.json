@@ -92,6 +92,9 @@
                 }
               }
             },
+            "recurring": {
+              "const": true
+            },
             "seller": {
               "$ref": "seller.json"
             },
