@@ -4,6 +4,18 @@ info:
   version: 0.0.0
 paths:
 
+  /broker:
+    get:
+      summary: Returns information about the broker running the server, if any.
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: https://schemas.licensezero.com/1.0.0/broker.json
+        404:
+          description: The server is run by the seller.
+
   /key:
     get:
       summary: Returns the public signing key of the server.
