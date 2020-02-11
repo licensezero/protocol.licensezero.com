@@ -16,15 +16,15 @@ paths:
         404:
           description: The server is run by the seller.
 
-  /key:
+  /register:
     get:
-      summary: Returns the public signing key of the server.
+      summary: Returns a register of public signing keys for the server.
       responses:
         200:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/1.0.0/key.json
+                $ref: https://schemas.licensezero.com/1.0.0/register.json
 
   /ledger:
     get:
