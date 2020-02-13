@@ -102,7 +102,7 @@ paths:
       5XX:
         description: Unexpected Error
 
-  receipts/{receiptID}:
+  /receipts/{receiptID}:
     get:
       summary: Returns a receipt.
       parameters:
@@ -125,7 +125,7 @@ paths:
         default:
           description: Unexpected Error
 
-  bundles/{bundleID}:
+  /bundles/{bundleID}:
     get:
       summary: Returns a bundle of receipts.
       parameters:
@@ -148,7 +148,7 @@ paths:
         default:
           description: Unexpected Error
 
-  orders/{orderID}:
+  /orders/{orderID}:
     get:
       summary: Returns the receipts for an order.
       parameters:
@@ -169,7 +169,7 @@ paths:
         default:
           description: Unexpected Error
 
-  orders/{orderID}/latest:
+  /orders/{orderID}/latest:
     get:
       summary: Returns the latest receipt for an order.
       parameters:
