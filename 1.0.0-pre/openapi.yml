@@ -81,7 +81,7 @@ paths:
         default:
           description: Unexpected Error
 
-  /order/:
+  /order:
     post:
       summary: Initiate an order for one or more paiod licenses.
       requestBody:
