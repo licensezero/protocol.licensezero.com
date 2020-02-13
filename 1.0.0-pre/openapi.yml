@@ -189,3 +189,11 @@ paths:
                 format: uri
         default:
           description: Unexpected Error
+
+  /terms/service:
+    get:
+      summary: Returns the broker's terms of service.
+
+  /terms/brokerage:
+    get:
+      summary: Returns the broker's brokerage terms.
