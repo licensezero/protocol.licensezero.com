@@ -3,6 +3,7 @@
   "devDependencies": {
     "ajv": "^6.10.2",
     "glob": "^7.1.6",
+    "reformat-json-files": "^1.0.1",
     "tape": "^4.12.1"
   },
   "scripts": {

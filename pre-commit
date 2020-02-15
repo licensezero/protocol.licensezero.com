@@ -1,2 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 npm test
+node_modules/.bin/reformat-json-files $(git ls-files | grep "\.json$")
