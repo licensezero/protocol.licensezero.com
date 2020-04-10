@@ -22,7 +22,7 @@ tape.test('1.0.0-pre', function (suite) {
       test.deepEqual(ajv.errors, null, 'no validation errors')
       test.equal(
         file,
-        schema.$id.replace('https://schemas.licensezero.com/', ''),
+        schema.$id.replace('https://protocol.licensezero.com/', ''),
         '$id'
       )
       test.end()

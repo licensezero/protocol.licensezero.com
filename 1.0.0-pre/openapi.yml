@@ -12,7 +12,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/1.0.0/broker.json
+                $ref: https://protocol.licensezero.com/1.0.0/broker.json
         404:
           description: The server is run by the seller.
 
@@ -24,7 +24,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/1.0.0/register.json
+                $ref: https://protocol.licensezero.com/1.0.0/register.json
 
   /ledger:
     get:
@@ -34,7 +34,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/1.0.0/ledger.json
+                $ref: https://protocol.licensezero.com/1.0.0/ledger.json
 
   /offers/{offerID}:
     get:
@@ -50,7 +50,7 @@ paths:
         200:
           content:
             application/json:
-              $ref: https://schemas.licensezero.com/1.0.0/offer.json
+              $ref: https://protocol.licensezero.com/1.0.0/offer.json
         400:
           description: The specified UUID is not a valid UUID.
         404:
@@ -73,7 +73,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/1.0.0/seller.json
+                $ref: https://protocol.licensezero.com/1.0.0/seller.json
         400:
           description: The specified UUID is not a valid UUID.
         404:
@@ -89,7 +89,7 @@ paths:
         content:
           application/x-www-form-urlencoded:
             schema:
-              $ref: https://schemas.licensezero.com/1.0.0/order.json
+              $ref: https://protocol.licensezero.com/1.0.0/order.json
     responses:
       303:
         description: The order is ready to complete.
@@ -117,7 +117,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/receipt.json
+                $ref: https://protocol.licensezero.com/receipt.json
         400:
           description: The specified id is not a valid UUID.
         404:
@@ -140,7 +140,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://schemas.licensezero.com/bundle.json
+                $ref: https://protocol.licensezero.com/bundle.json
         400:
           description: The specified id is not a valid UUID.
         404:
@@ -165,7 +165,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: https://schemas.licensezero.com/receipt.json
+                  $ref: https://protocol.licensezero.com/receipt.json
         default:
           description: Unexpected Error
 

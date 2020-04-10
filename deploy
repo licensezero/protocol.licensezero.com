@@ -1,2 +1,2 @@
-SITE=schemas.licensezero.com
+SITE=protocol.licensezero.com
 rsync -a --delete --exclude .git . $SITE:/var/www/$SITE/
