@@ -1,0 +1,31 @@
+digraph {
+  artifact[href="https://protocol.licensezero.com/1.0.0-pre/artifact.json"];
+  broker[href="https://protocol.licensezero.com/1.0.0-pre/broker.json"];
+  bundle[href="https://protocol.licensezero.com/1.0.0-pre/bundle.json"];
+  currency[href="https://protocol.licensezero.com/1.0.0-pre/currency.json"];
+  digest[href="https://protocol.licensezero.com/1.0.0-pre/digest.json"];
+  jurisdiction[href="https://protocol.licensezero.com/1.0.0-pre/jurisdiction.json"];
+  key[href="https://protocol.licensezero.com/1.0.0-pre/key.json"];
+  ledger[href="https://protocol.licensezero.com/1.0.0-pre/ledger.json"];
+  name[href="https://protocol.licensezero.com/1.0.0-pre/name.json"];
+  offer[href="https://protocol.licensezero.com/1.0.0-pre/offer.json"];
+  order[href="https://protocol.licensezero.com/1.0.0-pre/order.json"];
+  price[href="https://protocol.licensezero.com/1.0.0-pre/price.json"];
+  receipt[href="https://protocol.licensezero.com/1.0.0-pre/receipt.json"];
+  register[href="https://protocol.licensezero.com/1.0.0-pre/register.json"];
+  seller[href="https://protocol.licensezero.com/1.0.0-pre/seller.json"];
+  signature[href="https://protocol.licensezero.com/1.0.0-pre/signature.json"];
+  time[href="https://protocol.licensezero.com/1.0.0-pre/time.json"];
+  url[href="https://protocol.licensezero.com/1.0.0-pre/url.json"];
+
+  artifact;
+  broker -> {jurisdiction, name, url};
+  bundle -> {time, receipt};
+  ledger -> {digest, signature, time};
+  offer -> {price};
+  order -> {jurisdiction};
+  price -> {currency};
+  receipt -> {key, url, time, price, jurisdiction, name, seller, broker, signature};
+  register -> {time};
+  seller -> {jurisdiction};
+}
