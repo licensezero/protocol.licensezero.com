@@ -21,7 +21,7 @@
         }
       },
       "patternProperties": {
-        "^d+$": {
+        "^\\d+$": {
           "$ref": "price.json"
         }
       }
