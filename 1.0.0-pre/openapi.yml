@@ -169,27 +169,6 @@ paths:
         default:
           description: Unexpected Error
 
-  /orders/{orderID}/latest:
-    get:
-      summary: Returns the latest receipt for an order.
-      parameters:
-        - name: orderID
-          in: path
-          required: true
-          schema:
-            type: string
-            format: uuid
-      responses:
-        302:
-          headers:
-            Location:
-              description: The URL of the receipt.
-              schema:
-                type: string
-                format: uri
-        default:
-          description: Unexpected Error
-
   /terms/service:
     get:
       summary: Returns the broker's terms of service.
