@@ -18,9 +18,6 @@
       "properties": {
         "single": {
           "$ref": "price.json"
-        },
-        "site": {
-          "$ref": "price.json"
         }
       },
       "patternProperties": {
