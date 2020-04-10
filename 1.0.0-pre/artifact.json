@@ -19,9 +19,7 @@
         "properties": {
           "server": {
             "title": "licensing server",
-            "type": "string",
-            "format": "uri",
-            "pattern": "^https://",
+            "$ref": "url.json",
             "examples": [
               "https://broker.licensezero.com"
             ]

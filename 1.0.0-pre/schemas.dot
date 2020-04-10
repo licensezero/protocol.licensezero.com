@@ -18,11 +18,11 @@ digraph {
   time[href="https://protocol.licensezero.com/1.0.0-pre/time.json"];
   url[href="https://protocol.licensezero.com/1.0.0-pre/url.json"];
 
-  artifact;
+  artifact -> {url};
   broker -> {jurisdiction, name, url};
   bundle -> {time, receipt};
   ledger -> {digest, signature, time};
-  offer -> {price};
+  offer -> {price, url};
   order -> {jurisdiction};
   price -> {currency};
   receipt -> {key, url, time, price, jurisdiction, name, seller, broker, signature};
