@@ -5,7 +5,8 @@ digraph {
   currency[href="https://protocol.licensezero.com/1.0.0-pre/currency.json"];
   digest[href="https://protocol.licensezero.com/1.0.0-pre/digest.json"];
   jurisdiction[href="https://protocol.licensezero.com/1.0.0-pre/jurisdiction.json"];
-  key[href="https://protocol.licensezero.com/1.0.0-pre/key.json"];
+  public[href="https://protocol.licensezero.com/1.0.0-pre/public.json"];
+  private[href="https://protocol.licensezero.com/1.0.0-pre/private.json"];
   ledger[href="https://protocol.licensezero.com/1.0.0-pre/ledger.json"];
   name[href="https://protocol.licensezero.com/1.0.0-pre/name.json"];
   offer[href="https://protocol.licensezero.com/1.0.0-pre/offer.json"];
@@ -25,7 +26,7 @@ digraph {
   offer -> {price, url};
   order -> {jurisdiction};
   price -> {currency};
-  receipt -> {key, url, time, price, jurisdiction, name, seller, broker, signature};
+  receipt -> {public, url, time, price, jurisdiction, name, seller, broker, signature};
   register -> {time};
   seller -> {jurisdiction};
 }

@@ -13,7 +13,7 @@
   "properties": {
     "key": {
       "title": "public signing key of the broker server",
-      "$ref": "key.json"
+      "$ref": "public.json"
     },
     "license": {
       "title": "license manifest",
