@@ -23,8 +23,7 @@
     "offerIDs[]": {
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "uuid"
+        "$ref": "id.json"
       }
     }
   }

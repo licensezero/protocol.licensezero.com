@@ -54,14 +54,10 @@
               "$ref": "time.json"
             },
             "offerID": {
-              "title": "offer identifier",
-              "type": "string",
-              "format": "uuid"
+              "$ref": "id.json"
             },
             "orderID": {
-              "title": "order identifier",
-              "type": "string",
-              "format": "uuid"
+              "$ref": "id.json"
             },
             "price": {
               "title": "purchase price",
@@ -99,9 +95,7 @@
               "$ref": "seller.json"
             },
             "sellerID": {
-              "title": "seller identifier",
-              "type": "string",
-              "format": "uuid"
+              "$ref": "id.json"
             },
             "broker": {
               "$ref": "broker.json"

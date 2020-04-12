@@ -10,8 +10,7 @@
   "additionalProperties": true,
   "properties": {
     "sellerID": {
-      "type": "string",
-      "format": "uuid"
+      "$ref": "id.json"
     },
     "pricing": {
       "type": "object",
