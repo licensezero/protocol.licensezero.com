@@ -7,6 +7,7 @@
     "tape": "^4.12.1"
   },
   "scripts": {
+    "format": "reformat-json-files $(git ls-files | grep '\\.json$')",
     "test": "tape test/*.test.js"
   }
 }
