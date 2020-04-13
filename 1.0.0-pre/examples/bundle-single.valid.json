@@ -18,7 +18,8 @@
           "seller": {
             "email": "seller@example.com",
             "jurisdiction": "US-CA",
-            "name": "Jane Seller"
+            "name": "Jane Seller",
+            "website": "https://example.com/~seller"
           },
           "sellerID": "59e70a4d-ffee-4e9d-a526-7a9ff9161664",
           "price": {
