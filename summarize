@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+const fs = require('fs')
+
+const json = fs.readFileSync(process.argv[2], 'utf8')
+const path = require('path')
+const schema = JSON.parse(json)
+
+write(schema.$id + ':\n')
+describe(schema, 1)
+
+function describe (schema, level) {
+  const required = schema.required
+  const properties = schema.properties
+  const indent = '  '.repeat(level)
+  Object.keys(properties).sort().forEach(key => {
+    write(indent)
+    write(key)
+    if (!required.includes(key)) {
+      write(' (optional)')
+    }
+    write(':')
+
+    const subschema = properties[key]
+    if (subschema.$ref) {
+      write(' ' + path.basename(subschema.$ref, '.json') + '\n')
+    } else if (subschema.type === 'string' && subschema.format) {
+      write(' ' + subschema.format + '\n')
+    } else if (subschema.type === 'string' && subschema.pattern) {
+      write(' ' + subschema.pattern + '\n')
+    } else if (subschema.const) {
+      write(' ' + subschema.const + '\n')
+    } else if (subschema.type === 'object') {
+      write('\n')
+      describe(subschema, level + 1)
+    } else if (subschema.type === 'array') {
+      write(' [array]\n')
+      describe(subschema.items, level + 1)
+    } else {
+      write(' ' + subschema.type + '\n')
+    }
+  })
+}
+
+function write (string) {
+  process.stdout.write(string)
+}
